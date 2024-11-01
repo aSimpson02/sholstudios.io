@@ -15,52 +15,82 @@
             font-family: 'Alumni Sans', sans-serif;
             background-color: #BBE0A1;
             color: #8fb277;
-            text-align: center;
-            position: fixed; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
-            font-size: 36px; 
+            font-size: 2.5vw;
+            margin-top: 2vh;
+            text-align: center;
         }
 
-        .heading{
-            margin-bottom: 5vh;
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            max-width: 1200px;
+            width: 95%;
+            margin-top: 5vh;
         }
+        
 
         #img-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 15vw;
+            justify-content: flex-end;
+            width: 40%;
         }
 
         #img-container img {
-            width: 70vw; 
-            height: auto; 
-            display: block; 
+            width: 20%;
+            height: auto;
         }
 
         .links {
-            margin-top: 5vh;
-            margin-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
         }
 
+
         .links a {
-            font-size: 24px; 
+            font-size: 2.5vw;
             color: #8fb277;
             text-decoration: none;
-            margin: 0 15vw;
-            display: inline-block;
+            margin-bottom: 2vh;
         }
 
         .links a:hover {
-            text-decoration: underline; 
+            text-decoration: underline;
         }
 
+
         @media only screen and (max-width: 768px) {
-            body {
-                background-color: rgb(4, 4, 4);
-                position: sticky;
+            #container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+
+            #img-container {
+                display: none;
+            }
+
+            .links {
+                align-items: center;
+            }
+
+            .links a {
+                font-size: 4vw;
+                margin: 1vh 0;
+            }
+
+            h1 {
+                font-size: 5vw;
             }
         }
     </style>
@@ -74,15 +104,20 @@
 </div>
 
 
-<div id="img-container">
-    <!-- adding in img1 for RHS of screen -->
-    <img src="img1.png" alt="...image not loading..."></img>
+<div id="container">
+    
+    <div class="links">  
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+
+    <div id="img-container"></div>
+        <!-- adding in img1 for RHS of screen -->
+        <img src="img1.png" alt="...image not loading..."></img>
+    </div>
+
 </div>
 
-<div class="links">  
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contacts.html">Contact</a>
-</div>
 </body>
 </html>
