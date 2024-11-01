@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Alumni Sans', sans-serif;
+            background-color: #BBE0A1;
+            color: #8fb277;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 60px; 
+        }
+
+        .top-bar {
+            background-color: #BBE0A1;
+            color: #8fb277;
+            padding: 10px 20px; 
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            flex-wrap: wrap; 
+            width: 100%; 
+            z-index: 1000;
+            margin-bottom: 10%; 
+        }
+
+        .menu {
+            order: 1; 
+            width: 20%; 
+            text-align: left; 
+            padding-left: 20px; 
+        }
+
+        .menu a {
+            display: block;
+            color: #8fb277;
+            text-decoration: none;
+            margin-bottom: 10px; 
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            width: 50%; 
+            margin-top: 10%;
+        }
+
+        #about h1 {
+            margin-left: 20px;
+        }
+
+        #about p {
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        .project {
+            background-color: #BBE0A1;
+            color: #8fb277;
+            padding: 20px;
+            text-align: left; 
+            cursor: pointer;
+            border: 1px solid rgb(123, 119, 119);
+            border-radius: 10px; 
+            margin-bottom: 20px;
+        }
+
+        .project-name {
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project-name a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .description {
+            display: none;
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .project:hover .description {
+            display: block;
+        }
+
+        @media only screen and (max-width: 768px) {
+        body {
+            justify-content: center;
+            text-align: center;
+        }
+        .top-bar {
+            justify-content: center;
+            order: 1;
+            margin-bottom: 15%;
+        }
+        .menu {
+            width: 100%; 
+            text-align: center; 
+            order: 2; 
+            padding-left: 0;
+        }
+        section {
+            width: 90%;
+            margin-top: 10%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I’m Annabel. I'm passionate about Artificial Intelligence and love exploring the world of technology. I'm currently a student pursuing a masters degree, with an expected graduation in summer 2025. I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
+    </section>
+
+
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Cymatics linear regression project</a></div>
+            <div class="description">Using linear regression to predict an average frequency from a Spotify playlist. Cymatics represents the data visualization of this result.</div>
+        </div>
+
+        <div class="project">
+            <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Music generation project</a></div>
+            <div class="description">Using a classical MIDI Dataset to predict and generate music. Deep neural networks were used for this project.</div>
+        </div>
+
+        <div class="project">
+            <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Water sanitation Data Visualization</a></div>
+            <div class="description">Using global data to see the water sanitation throughout the world. My results and visualizations were shown on a world map.</div>
+        </div>
+
+
+        <div class="project">
+            <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Image processing Deep learning</a></div>
+            <div class="description">Training a machine learning model using deep neural networks to categorize images in four different ways.</div>
+        </div>
+    </section>
+
+    <div class="top-bar">
+        <div class="container menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>

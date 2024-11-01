@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Alumni Sans', sans-serif;
+            background-color: #BBE0A1;
+            color: #8fb277;
+            text-align: center;
+            position: fixed; 
+        }
+
+        h1 {
+            font-size: 36px; 
+        }
+
+        .heading{
+            margin-bottom: 5vh;
+        }
+
+        #img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15vw;
+        }
+
+        #img-container img {
+            width: 70vw; 
+            height: auto; 
+            display: block; 
+        }
+
+        .links {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+
+        .links a {
+            font-size: 24px; 
+            color: #8fb277;
+            text-decoration: none;
+            margin: 0 15vw;
+            display: inline-block;
+        }
+
+        .links a:hover {
+            text-decoration: underline; 
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: rgb(4, 4, 4);
+                position: sticky;
+            }
+        }
+    </style>
+
+
+</style>
+</head>
+<body>
+<div class = "heading">
+    <h1>Hello, World</h1>
+</div>
+
+
+<div id="img-container">
+    <!-- adding in img1 for RHS of screen -->
+    <img src="img1.png" alt="...image not loading..."></img>
+</div>
+
+<div class="links">  
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contacts.html">Contact</a>
+</div>
+</body>
+</html>
