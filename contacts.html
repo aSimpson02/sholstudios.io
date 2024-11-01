@@ -15,21 +15,29 @@
             font-family: 'Alumni Sans', sans-serif;
             background-color: #BBE0A1;
             color: #8fb277;
-            padding-top: 60px;
-
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
+        
         .top-bar {
             background-color: #BBE0A1;
             color: #8fb277;
-            padding: 10px 20px; 
             display: flex;
-            justify-content: flex-end; 
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap; 
-            position: fixed; 
             width: 100%; 
-            z-index: 1000; 
+            position: fixed;
+            top: 0; 
+            z-index: 1000;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 2%;
+            width: 50%;
         }
 
         .form-control {
@@ -51,49 +59,62 @@
         }
 
         .menu {
-            order: 1; 
-            width: 20%; 
-            text-align: left; 
-            padding-left: 20px; 
+            display: flex;
+            gap: 5%;
+            padding: 1%;
         }
 
         .menu a {
-            display: block;
             color: #8fb277;
             text-decoration: none;
-            margin-bottom: 10px; 
-            font-size: 18px;
-        }
-
-        .content {
-            padding: 50px;
-            text-align: center;
-            width: 80%; 
+            font-size: 1.2rem;
         }
 
 
-        #img-container {
+        .contactLinks {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem;
+            font-size: 2rem;
+        }
+
+        .contactLinks a {
+            color: #8fb277;
+            text-decoration: none;
+        }
+
+        .img-container {
             display: flex;
             justify-content: flex-end;
-            width: 40%;
+            align-items: center;
+            width: 30%;
+            margin-left: auto;
+            margin-right: 5%;
         }
 
-        #img-container img {
-            width: 20%;
+        .img-container img {
+            width: 80%;
+            max-width: 120px;
             height: auto;
+            border-radius: 5%;
         }
-
-
 
         @media (max-width: 768px) {
-            .menu {
-                width: 100%; 
-                text-align: center; 
-                order: 2; 
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
 
-            .content {
-                width: 100%; 
+            .contactLinks {
+                font-size: 1.2rem;
+                justify-content: center;
+            }
+
+            .img-container {
+                display: none;
             }
         }
     </style>
@@ -103,20 +124,25 @@
     <div class="top-bar">
         <div class="container menu">
             <a href="home.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">Work</a>
             <a href="contacts.html">Contact</a>
         </div>
     </div>
 
+
     <div class="contactLinks">
         <a href="https://github.com/aSimpson02">GitHub</a>
-        <a href="www.linkedin.com/in/annabel-gardshol-76686179">Linkdin</a>
+        <a href="https://www.linkedin.com/in/annabel-gardshol-76686179">Linkdin</a>
     </div>
 
-    <div id="img-container"></div>
-        <!-- adding in img1 for RHS of screen -->
-        <img src="img2.png" alt="...image not loading..."></img>
+
+
+        <div class="img-container">
+            <img src="img2.png" alt="...image not loading...">
+        </div>
     </div>
+
+    
 
 
     <div class="content">
