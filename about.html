@@ -16,60 +16,54 @@
             background-color: #BBE0A1;
             color: #8fb277;
             display: flex;
-            justify-content: space-between;
-            padding-top: 60px; 
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5%;
         }
 
         .top-bar {
             background-color: #BBE0A1;
             color: #8fb277;
-            padding: 10px 20px; 
             display: flex;
-            justify-content: flex-end; 
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap; 
             width: 100%; 
+            position: fixed;
+            top: 0; 
             z-index: 1000;
             margin-bottom: 10%; 
         }
 
         .menu {
-            order: 1; 
-            width: 20%; 
-            text-align: left; 
-            padding-left: 20px; 
+            display: flex; 
+            justify-content: center; 
+            width: 100%; 
+            gap: 5%;
         }
 
         .menu a {
             display: block;
             color: #8fb277;
             text-decoration: none;
-            margin-bottom: 10px; 
+            margin-bottom: 0 20px; 
             font-size: 18px;
         }
 
         section {
             padding: 20px;
-            width: 50%; 
+            width: 80%; 
             margin-top: 10%;
+            text-align: center;
         }
 
-        #about h1 {
-            margin-left: 20px;
-        }
-
-        #about p {
-            margin-right: 20px;
-            text-align: right;
-        }
 
         .project {
             background-color: #BBE0A1;
             color: #8fb277;
             padding: 20px;
-            text-align: left; 
+            text-align: center; 
             cursor: pointer;
-            border: 1px solid rgb(123, 119, 119);
+            border: 1px #8fb277;
             border-radius: 10px; 
             margin-bottom: 20px;
         }
@@ -101,11 +95,13 @@
         body {
             justify-content: center;
             text-align: center;
+            padding-top: 10%;
         }
         .top-bar {
+            position: static;
             justify-content: center;
             order: 1;
-            margin-bottom: 15%;
+            margin-bottom: 10%;
         }
         .menu {
             width: 100%; 
@@ -117,6 +113,10 @@
             width: 90%;
             margin-top: 10%;
         }
+
+        .description {
+                display: block;
+            }
     }
 
     </style>
